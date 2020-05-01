@@ -323,13 +323,45 @@
     </div>
   </section>
 
+
+     <!-- Footer -->
+     <footer class="section teal darken-2 white-text center">
+        <p class="flow-text"> mdmirajul karim Travel &copy; 2018</p>
+      </footer>
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
     $(document).ready(function () {
+//init  side nav
+$('.button-collapse').sideNav();
       // Custom JS & jQuery here
-      
+    //init slider
+
+    $('.slider').slider({
+      indicators:false,
+      height:500,
+      transition:500,
+      interval:5000
+
+    })
+
+    
+      // Autocomplete
+      $('.autocomplete').autocomplete({
+        data: {
+          "Aruba": null,
+          "Cancun Mexico": null,
+          "Hawaii": null,
+          "Florida": null,
+          "California": null,
+          "Jamaica": null,
+          "Europe": null,
+          "The Bahamas": null,
+        }
+      });
+
     });
   </script>
 </body>
